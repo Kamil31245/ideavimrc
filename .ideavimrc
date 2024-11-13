@@ -1,0 +1,32 @@
+set ideajoin
+let mapleader = ","
+
+" Map `Ctrl + P` to IntelliJ's 'Find File' action
+nmap <C-S-n> :action GotoFile<CR>
+
+" Map `Ctrl + Shift + N` to 'Find Class' action
+nmap <C-n> :action GotoClass<CR>
+
+" Map `Ctrl + Shift + A` to 'Find Action' (allows you to search for any action)
+nmap <C-S-a> :action GotoAction<CR>
+
+" Map `Ctrl + E` to 'Recent Files'
+
+nmap <C-e> :action RecentFiles<CR>
+
+nmap <leader>rf :action RenameElement<CR>
+
+nmap <leader>fu :action FindUsages<CR>
+
+" Map ,ff to Find File
+nmap <leader>ff :action GotoFile<CR>
+
+" Map ,fc to Find Class
+nmap <leader>fc :action GotoClass<CR>
+
+" Map ,ro to Recently Opened Files
+nmap <leader>ro :action RecentFiles<CR>
+
+nmap <leader>gf :action FindInPath<CR>
+
+nmap <leader>ft :action ActivateTerminalToolWindow<CR>
