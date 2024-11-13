@@ -7,6 +7,16 @@ nmap <C-S-n> :action GotoFile<CR>
 " Map `Ctrl + Shift + N` to 'Find Class' action
 nmap <C-n> :action GotoClass<CR>
 
+nmap <leader>q :action HideActiveWindow<CR>
+
+nmap <leader>sv :action SplitVertically<CR>
+nmap <leader>sh :action SplitHorizontally<CR>
+" Move to the next split (right or down)
+nmap <leader>w <C-w>w
+
+nmap <leader>tn :action NextTab<CR>
+nmap <leader>tp :action PreviousTab<CR>
+
 "In visual copy selected to clipboard, in normal yank line to clipboard
 vmap ,y "+y
 nmap ,y "+yy
