@@ -7,7 +7,9 @@ nmap <C-S-n> :action GotoFile<CR>
 " Map `Ctrl + Shift + N` to 'Find Class' action
 nmap <C-n> :action GotoClass<CR>
 
+"In visual copy selected to clipboard, in normal yank line to clipboard
 vmap ,y "+y
+nmap ,y "+yy
 
 " Map `Ctrl + Shift + A` to 'Find Action' (allows you to search for any action)
 nmap <C-S-a> :action GotoAction<CR>
