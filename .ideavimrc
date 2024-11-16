@@ -18,17 +18,35 @@ nmap <leader>tn :action NextTab<CR>
 nmap <leader>tp :action PreviousTab<CR>
 
 "In visual copy selected to clipboard, in normal yank line to clipboard
-vmap ,y "+y
-nmap ,y "+yy
+vmap <leader>y "+y
+nmap <leader>y "+yy
 
 " Map `Ctrl + Shift + A` to 'Find Action' (allows you to search for any action)
 nmap <C-S-a> :action GotoAction<CR>
 
 " Map `Ctrl + E` to 'Recent Files'
 
-nmap <C-e> :action RecentFiles<CR>
+nmap <leader>fr :action RecentFiles<CR>
 
-nmap <leader>rf :action RenameElement<CR>
+" Start the application with ,fs
+map <leader>ss :action Run<CR>
+
+nmap <leader>dt :action CloseAllUnpinnedEditors<CR>
+
+" Start the debugger with ,fd
+map <leader>sd :action Debug<CR>
+
+nmap <leader>rn :action RenameElement<CR>
+
+nmap <leader>bp :action ToggleLineBreakpoint<CR>
+
+" Reformat code with ,rf
+map <leader>rf :action ReformatCode<CR>
+
+map <leader>tt :action Stop<CR>
+
+" Go to the Project tree with ,pt
+map <leader>pt :action ActivateProjectToolWindow<CR>
 
 nmap <leader>fu :action FindUsages<CR>
 
@@ -37,9 +55,6 @@ nmap <leader>ff :action GotoFile<CR>
 
 " Map ,fc to Find Class
 nmap <leader>fc :action GotoClass<CR>
-
-" Map ,ro to Recently Opened Files
-nmap <leader>ro :action RecentFiles<CR>
 
 nmap <leader>gf :action FindInPath<CR>
 
