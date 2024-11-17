@@ -33,6 +33,8 @@ map <leader>ss :action Run<CR>
 
 nmap <leader>dt :action CloseAllUnpinnedEditors<CR>
 
+nmap <leader>do :action CloseAllEditorsButActive<CR>
+
 " Start the debugger with ,fd
 map <leader>sd :action Debug<CR>
 
