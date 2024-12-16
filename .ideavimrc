@@ -14,6 +14,10 @@ nmap <leader>sh :action SplitHorizontally<CR>
 " Move to the next split (right or down)
 nmap <leader>w <C-w>w
 
+nmap <leader>e :action ShowErrorDescription<CR>
+
+nmap <leader>q :action QuickJavaDoc<CR>
+
 nmap <leader>tn :action NextTab<CR>
 nmap <leader>tp :action PreviousTab<CR>
 
